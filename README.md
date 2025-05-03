@@ -23,18 +23,19 @@ O **FURIAHELPER\_BOT** foi pensado para criar um canal de comunicação entre o 
 
 ![Menu do Bot](docs/menu.png.jpeg)
 
-**Assista o bot funcionando:**
-[▶ Ver vídeo da demonstração](docs/demo.mp4)
+📽️ **Veja o FURIAHELPER\_BOT em ação:**
+
+[![Assista ao vídeo](https://img.youtube.com/vi/P5IteVHWZgA/hqdefault.jpg)](https://www.youtube.com/watch?v=P5IteVHWZgA)
 
 ---
 
 ## 🧠 Tecnologias utilizadas
 
-* [n8n](https://n8n.io) — ferramenta de automação e criação de fluxos low-code
-* [Gemini Pro](https://ai.google.dev) — modelo de IA da Google para respostas inteligentes
+* [n8n](https://n8n.io) — automação e criação de fluxos low-code
+* [Gemini Pro](https://ai.google.dev) — IA da Google para geração de respostas
 * [Telegram Bot API](https://core.telegram.org/bots/api)
-* HTTP Request para APIs externas (ex: Draft5)
-* Simple Memory (armazenamento e contexto do usuário)
+* HTTP Request (para dados de jogos da Draft5)
+* Simple Memory (armazenamento de contexto)
 
 ---
 
@@ -43,10 +44,9 @@ O **FURIAHELPER\_BOT** foi pensado para criar um canal de comunicação entre o 
 ```
 furia-telegram-bot/
 ├── workflows/
-│   └── furiabot-n8n-workflow.json  # Fluxo principal n8n
+│   └── furiabot-n8n-workflow.json  # Fluxo n8n
 ├── docs/
-│   ├── demo.mp4                    # Vídeo de demonstração
-│   └── menu.png.jpeg               # Tela inicial do bot
+│   ├── menu.png.jpeg                # Tela inicial do bot
 ├── .gitignore
 └── README.md
 ```
@@ -66,51 +66,57 @@ cd furia-telegram-bot
 
 * Crie um novo Workflow
 * Clique nos 3 pontinhos > Import from file
-* Selecione o arquivo: `workflows/furiabot-n8n-workflow.json`
+* Selecione: `workflows/furiabot-n8n-workflow.json`
 
 ### 3. Configure os acessos
 
-* **Token do Telegram** (via [@BotFather](https://t.me/BotFather))
+* **Token do Telegram** ([crie no BotFather](https://t.me/BotFather))
 * **API Key do Gemini** (via Google AI Studio)
 
 ### 4. Ative o Workflow
 
 * Clique em **Activate**
-* Fale com o bot em: [@FURIAHELPER\_BOT](https://t.me/FURIAHELPER_BOT)
+* Converse com o bot: [@FURIAHELPER\_BOT](https://t.me/FURIAHELPER_BOT)
 
 ---
 
 ## 🧩 Funcionalidades
 
-* **Interação personalizada com emojis e linguagem da torcida**
-* **Menu com 7 opções principais**:
+* Interação com linguagem divertida e estilo da torcida 🖤
 
-  * 1️⃣ Próximos Jogos
-  * 2️⃣ Últimos Jogos
-  * 3️⃣ Elenco
-  * 4️⃣ Produtos Oficiais
-  * 5️⃣ Redes Sociais
-  * 6️⃣ Modalidades
-  * 7️⃣ Quiz da FURIA
-* **Memória do usuário** (nome, desempenho no quiz, preferências)
-* **Quiz com pontuação**
-* **Suporte multilíngue PT/EN/ES (via language\_code)**
+* Menu com 7 opções:
+
+  ```
+  1️⃣ Próximos Jogos
+  2️⃣ Últimos Jogos
+  3️⃣ Elenco
+  4️⃣ Produtos Oficiais
+  5️⃣ Redes Sociais
+  6️⃣ Modalidades
+  7️⃣ Quiz da FURIA
+  ```
+
+* Memória do usuário (nome, quiz, preferências)
+
+* Quiz com pontuação
+
+* Suporte a múltiplos idiomas (PT/EN/ES)
 
 ---
 
 ## 📌 Observações
 
-* As opções são escolhidas via **número digitado**, não por botão (Telegram API restrita em bots n8n).
-* A aba de **notícias** e os **botões clicáveis** podem ser incluídos em versões futuras.
-* O vídeo está compactado para manter o limite de tamanho do GitHub (< 100MB).
+* As opções são enviadas por **número digitado**, não botões (limitação do Telegram + n8n).
+* Notícias e botões podem ser adicionados futuramente.
+* O vídeo de demonstração está no YouTube e vinculado acima.
 
 ---
 
-## 📢 Desenvolvido por
+## 👤 Desenvolvido por
 
 **Victor Russo**
-[LinkedIn](https://www.linkedin.com/in/victorrusso7)
-Criado com ❤️ para o desafio da FURIA Tech
+🔗 [LinkedIn](https://www.linkedin.com/in/victorrusso7)
+🚀 Criado com ❤️ para o **Desafio Técnico da FURIA Tech**
 
 ---
 
